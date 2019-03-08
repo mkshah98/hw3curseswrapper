@@ -15,6 +15,9 @@ CellReference &Curses::CellReference::operator=(const char letter) {
   return *this;
 }
 
-Curses::CellReference::operator char() const {
+/*Curses::CellReference::operator char() const {
+  char c = WindowImplementation::getWindowChar(row, col);
+  WindowImplementation::moveCursor(row, col)
   return WindowImplementation::getWindowChar(row, col);
+  */
 }
